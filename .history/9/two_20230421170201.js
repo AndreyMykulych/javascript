@@ -12,17 +12,19 @@ const itemArray = [];
     }
    
     let getDataButton = document.querySelector('button');
-    let clickMove = () => {
-            let itemName = document.querySelector('.itemName');
-            let itemCountry = document.querySelector('.itemCountry');
-            let newItem = new Item(itemName, itemCountry)
-        
-            itemArray.push(newItem)
-            console.log(itemArray)
-            
-             //намагався очистити інпут після натиску кнопки
-       
-    }
-    getDataButton.addEventListener('click', clickMove)
+    getDataButton.addEventListener('click', () => {
+        let itemName = document.querySelector('.itemName').value;
+        let itemCountry = document.querySelector('.itemCountry').value;
+        let newItem = new Item(itemName, itemCountry)
+    
+        itemArray.push(newItem)
+        console.log(itemArray)
+        itemName.value = ''
+        itemCountry.value = '' //намагався очистити інпут після натиску кнопки
+   })
+    
+    
+
+   
     
 }

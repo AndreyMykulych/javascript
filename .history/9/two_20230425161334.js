@@ -13,16 +13,20 @@ const itemArray = [];
    
     let getDataButton = document.querySelector('button');
     let clickMove = () => {
-            let itemName = document.querySelector('.itemName');
-            let itemCountry = document.querySelector('.itemCountry');
+            let itemName = document.querySelector('.itemName').value;
+            let itemCountry = document.querySelector('.itemCountry').value;
             let newItem = new Item(itemName, itemCountry)
         
             itemArray.push(newItem)
             console.log(itemArray)
-            
-             //намагався очистити інпут після натиску кнопки
+            itemName = ''
+            itemCountry = '' //намагався очистити інпут після натиску кнопки
        
     }
     getDataButton.addEventListener('click', clickMove)
+    
+    
+
+   
     
 }
