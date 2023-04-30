@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="one.js"></script>
+<style>
+     .auth{
+         display: none;
+         flex-direction: column;
+         justify-content: center;
+        width: 58.75rem;
+        height: 43.75rem;
+        margin: 0 auto;
+        border: 2px solid orange;
+        
+    }
+    .passPar,.loginPar{
+        text-align: center;
+    }
+    .pizzaForm{
+        display: block;
+        width: 60.75rem;
+        flex-direction: column;
+        height: 25.75rem;
+        margin: 0 auto;
+        border: 2px solid orange; 
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        align-content: stretch;
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+        width: 50rem;
+        justify-content: space-around;
+    }
+    .pizzaChoice {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .pizzaSize {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+<body>
+    
+    <form class="auth" >
+      <p class="loginPar">
+        <label style="margin-right:25px" for="login">login</label>
+        <input type="text" id="login">
+      </p>
+  
+       <p class="passPar">
+              <label for="password">password</label>
+               <input type="password" id="password">
+       </p>
+       <button style='width: fit-content; margin: 0 auto;' class="submit">Submit</button>
+    </form>
+   
+    
+    <form class="pizzaForm">
+        <div class="pizzaSize">
+            <h1>
+                     Вибери розмір Піцци
+             </h1>
+             <div>
+             <label for="sizeS">S</label>
+             <input type="radio" class="S" name="sizeS" >
+            </div>
+            <div>
+             <label for="sizeM">M</label>
+             <input type="radio" class="M" name="sizeM">
+            </div>
+            <div>
+             <label for="sizeL">L</label>
+             <input type="radio" class="L" name="sizeL">
+            </div>
+         </div>
+         <div class="menu">
+             
+             <div class="pizzaChoice">
+                <h1>Menu</h1>
+                        <div>
+             <label for="pizzaA"> Піцца Мексиканська</label>
+                 <input type="radio" name="pizzaA" class="pizzaA">
+
+                 
+                        </div>
+                        <div>
+             <label for="pizzaB">Піцца Маргарита</label>
+                 <input type="radio" name="pizzaB" class="pizzaB">
+                        </div>
+                        <div>
+             <label for="pizzaC">Піцца Гаваї</label>
+                 <input type="radio" name="pizzaC" class="pizzaC">
+                         </div>
+                </div> 
+                <div>
+                    <h1>Price за розмір S</h1>
+                    <p class="priceA"></p>
+                    <p class="priceB"></p>
+                    <p class="priceC"></p>
+                </div>
+         </div>
+        <div class="footer">  
+            <p class="total">Total Price</p>
+                <button type="submit" >Замовити</button>
+        </div>
+      
+    </form>
+    
+</body>
+</html>

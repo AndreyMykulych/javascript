@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="one.js"></script>
+<style>
+     .auth{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+        width: 58.75rem;
+        height: 43.75rem;
+        margin: 0 auto;
+        border: 2px solid orange;
+    }
+    .passPar,.loginPar{
+        text-align: center;
+    }
+    .pizzaForm{
+        display: none;
+        width: 58.75rem;
+        height: 43.75rem;
+        margin: 0 auto;
+        border: 2px solid orange; 
+    }
+    
+</style>
+<body>
+    <form class="auth" disabled="">
+      <p class="loginPar">
+        <label style="margin-right:25px" for="login">login</label>
+        <input type="text" id="login">
+      </p>
+  
+       <p class="passPar">
+              <label for="password">password</label>
+               <input type="password" id="password">
+       </p>
+       <button style='' class="submit">Submit</button>
+    </form>
+    <form class="pizzaForm">
+
+    </form>
+</body>
+</html>

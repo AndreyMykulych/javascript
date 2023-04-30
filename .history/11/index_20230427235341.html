@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="one.js"></script>
+<style>
+     .auth{
+         display: none;
+         flex-direction: column;
+         justify-content: center;
+        width: 58.75rem;
+        height: 43.75rem;
+        margin: 0 auto;
+        border: 2px solid orange;
+        
+    }
+    .passPar,.loginPar{
+        text-align: center;
+    }
+    .pizzaForm{
+        display: flex;
+        width: 58.75rem;
+        flex-direction: column;
+        height: 43.75rem;
+        margin: 0 auto;
+        border: 2px solid orange; 
+    }
+    
+</style>
+<body>
+    
+    <form class="auth" >
+      <p class="loginPar">
+        <label style="margin-right:25px" for="login">login</label>
+        <input type="text" id="login">
+      </p>
+  
+       <p class="passPar">
+              <label for="password">password</label>
+               <input type="password" id="password">
+       </p>
+       <button style='width: fit-content; margin: 0 auto;' class="submit">Submit</button>
+    </form>
+   
+    
+    <form class="pizzaForm">
+        <div>
+            <h3>
+                     Вибери розмір Піцци
+             </h3>
+             <label for="sizeS">S</label>
+             <input type="radio" class="S" name="size" >
+             <label for="sizeM">M</label>
+             <input type="radio" class="M" name="size">
+             <label for="sizeL">L</label>
+             <input type="radio" class="L" name="size">
+         </div>
+      <button type="submit">Замовити</button>
+    </form>
+    
+</body>
+</html>
